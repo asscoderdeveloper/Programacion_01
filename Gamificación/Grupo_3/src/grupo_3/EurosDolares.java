@@ -1,0 +1,49 @@
+/*
+FUNCIONALIDAD: CREAR UN PROGRAMA QUE PASE DE EUROS A DOLARES
+OBJETIVO: APRENDER A PROGRAMAR
+FECHA DE CREACION: 5/10/21
+
+ */
+/*
+ALGORTIMO CONVERSION DE EUROS A DOLARES{
+    LECTURA IMPORTE DE EUROS;
+    TRATAMIENTO;
+    VISUALIZAR RESULTADO;
+}
+ALGORITMO LECTURA DE EUROS{
+    MENSAJE USUARIO PARA SOLICITAR IMPORTE DE EUROS A CONVERTIR;
+    LECTURA VALOR IMPORTE EUROS;
+}
+ALGORITMO TRATAMIENTO{
+    DOLARES=EUROS*UNIDAD_CONVERSION
+}
+ALGORITMO VISUALIZAR RESULTADO{
+    MENSAJE QUE SAQUE POR PANTALLA EL VALOR EN DOLARES
+}
+
+
+*/
+
+package grupo_3;
+
+public class EurosDolares {
+
+    public static void main(String[] argumentos) throws Exception {
+        //DECLARACION
+        //DECLARACION DE VARIABLES DE TIPO DOUBLE PARA ALMACENAR LOS EIROS RECIBIDOS
+        double euros;
+        //DECLARACION DE VARIABLE DE TIPO DOUBLE PARA ALMACENAR LOS DOLARES
+        double dolares;
+        //DECLARACION DE LA CONSTANTE TIPO DOUBLE PARA ALMACENAR LA UNIDAD DE CONVERSION
+        final double UNIDAD_CONVERSION = 1.16;
+        //LECTURA IMPORTE DE EUROS
+        System.out.print("Introduce la cantidad de euros a convertir: ");
+        euros = LT.readDouble();
+        //TRATAMIENTO
+        //PASAR DE EUROS A DOLARES
+        dolares = euros*UNIDAD_CONVERSION;
+        //VISUALIZAR RESULTADO
+        System.out.println("Este es el valor en dolares "+ dolares + " dolares." );
+    }
+    
+}
