@@ -264,4 +264,24 @@ public class Palabra {
         }
         return palabraTransformada;
     } 
+        //MÉTODO adicionCaracter LLEVA A CABO LA ADICIÓN DE UN CARACTER DADO POR PARÁMETRO
+    //EN UN OBJETO Palabra
+    public void adicionCaracter(char caracter) {
+        //almacenar el caracter dado en la primera componente libre del atributo
+        //caracteres del objeto Palabra. El índice de dicha componente coincide
+        //con el valor del atributo numeroCaracteres del mismo objeto Palabra
+        caracteres[numeroCaracteres]=caracter;
+        //incrementar el atributo numeroCaracteres del objeto Palabra para que
+        //tenga en cuenta el caracter que acabamos de añadir en la palabra
+        numeroCaracteres++;
+    }
+    
+    //MÉTODO obtenerCaracter LLEVA A CABO LA OBTENCIÓN DEL CARACTER DE UNA
+    //PALABRA QUE ESTÁ ALMACENADO EN LA POSICIÓN DADA DENTRO DEL ATRIBUTO
+    //caracteres DE DICHO OBJETO Palabra
+    public char obtenerCaracter(int posicion) {
+        //devolver el caracter del objeto Palabra que está en la posición
+        //dada dentro del atributo array caracteres
+        return (caracteres[posicion]);
+    }
 }

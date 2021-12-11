@@ -21,7 +21,9 @@ public class PalabraFicherosEscritura {
     private static final int SALTO_LINEA=(int) '\n';
     //declaración atributo de objeto BufferedWriter que posibilite el enlace
     //con el fichero de texto a nivel de escritura
-    private BufferedWriter fichero=null;  
+    private BufferedWriter fichero=null;
+    //
+    private static final int COD_X=(int)'x';
     
     //MÉTODOS
     //MÉTODO CONSTRUCTOR
@@ -50,6 +52,11 @@ public class PalabraFicherosEscritura {
     public void escrituraSeparador() throws Exception {
         //escritura del código del espacio en blanco en el fichero
         fichero.write(COD_ESPACIO);
+    }
+    //
+    public void escrituraX() throws Exception {
+        //escritura del código del caracter X en el fichero
+        fichero.write(COD_X);
     }
     
     //MÉTODO nuevaLinea QUE LLEVA A CABO LA CREACIÓN DE UNA NUEVA LINEA
