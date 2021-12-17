@@ -20,16 +20,16 @@ public class programaClase2 {
         System.out.println("Introduce diez palabras acabadas en '.' :");
         while(Palabra.hayPalabras()){
             palabra.lectura();
-            contador = 0;
             while(fichero.hayPalabras()){
                 //lectura
                 palabraLeida = fichero.lectura();
+                System.out.println(palabra + " " + palabraLeida  );
                 if((palabra.getNumeroCaracteres())==(palabraLeida.getNumeroCaracteres())){
                     if(comparador()){
                         contador++;
                     }
                 }
-                posiciones[contadorDeVueltas] += contador;
+                posiciones[contadorDeVueltas] = contador;
             }
             contadorDeVueltas++;
         }
