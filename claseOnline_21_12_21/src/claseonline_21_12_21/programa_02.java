@@ -113,7 +113,7 @@ public class programa_02 {
                     nombreFichero1 = LT.readLine();
                     System.out.println("Nombre del fichero codificado: ");
                     nombreFichero2 = LT.readLine();
-                    break;
+//                    break;
             case 2: System.out.println("Nombre del fichero a decodificar: ");
                     nombreFichero1 = LT.readLine();
                     System.out.println("Nombre del fichero decodificado: ");

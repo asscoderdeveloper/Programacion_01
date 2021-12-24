@@ -1,0 +1,56 @@
+Frecuencia caracter a: 2.
+
+Frecuencia caracter b: 0.
+
+Frecuencia caracter c: 1.
+
+Frecuencia caracter d: 1.
+
+Frecuencia caracter e: 1.
+
+Frecuencia caracter f: 0.
+
+Frecuencia caracter g: 0.
+
+Frecuencia caracter h: 0.
+
+Frecuencia caracter i: 0.
+
+Frecuencia caracter j: 0.
+
+Frecuencia caracter k: 0.
+
+Frecuencia caracter l: 0.
+
+Frecuencia caracter m: 0.
+
+Frecuencia caracter n: 1.
+
+Frecuencia caracter ñ: 0.
+
+Frecuencia caracter o: 2.
+
+Frecuencia caracter p: 0.
+
+Frecuencia caracter q: 0.
+
+Frecuencia caracter r: 2.
+
+Frecuencia caracter s: 2.
+
+Frecuencia caracter t: 2.
+
+Frecuencia caracter u: 2.
+
+Frecuencia caracter v: 0.
+
+Frecuencia caracter w: 0.
+
+Frecuencia caracter x: 0.
+
+Frecuencia caracter y: 0.
+
+Frecuencia caracter z: 0.
+
+Frecuencia caracter  : 3.
+
