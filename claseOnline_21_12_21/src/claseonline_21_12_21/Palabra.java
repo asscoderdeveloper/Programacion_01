@@ -5,6 +5,7 @@ public class Palabra {
     //DECLARACION DE LOS ATRIBUTOS DE CLASE PARA LOS OBJETOS PALABRA
     private static final int MAXIMO_NUMERO_CARACTERES = 20;
     private static final char FINAL_SECUENCIA = '.';
+    private static final char SALTO_LINEA = '\n';
     private static final char ESPACIO = ' ';
     private static char caracter=ESPACIO;
     private char[] caracteres = new char[MAXIMO_NUMERO_CARACTERES];
@@ -15,9 +16,16 @@ public class Palabra {
         numeroCaracteres=0;
     }
     
+    public Palabra(String dato) {
+        //inicialización del atributo de objeto numeroCaracteres
+        numeroCaracteres=dato.length();
+        //asignación de los caracteres del String dato en el atributo caracteres
+        caracteres=dato.toCharArray();
+    } 
+    
     //METODO BUSCAR PALABRA(lo llamamos de hayPalabras)
     private static void  buscarPalabra(){
-        while(caracter==ESPACIO){
+        while((caracter==ESPACIO)&&(caracter != SALTO_LINEA)){
             caracter = LT.readChar();
         }
     }
@@ -26,7 +34,19 @@ public class Palabra {
     public static boolean hayPalabras(){
         //BUSCAR PALABRA
         buscarPalabra();
-        return (caracter!=FINAL_SECUENCIA);
+        if((caracter != FINAL_SECUENCIA)&&(caracter != SALTO_LINEA)){
+            return true;
+        }
+        else{
+            //vaciar buffer de entrada
+            if (caracter==FINAL_SECUENCIA) LT.skipLine();
+            //inicializar el atributo caracter a espacio para poder estar preparados
+            //para la lectura de la palabras desde una nueva secuencia de caracteres
+            //introducida por teclado
+            caracter=ESPACIO;
+            //devolver false como resultado de este método
+            return false;
+        }
     }
     
     //METODO LECTURA
